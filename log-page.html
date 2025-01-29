@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+	<title>log</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" href="css/log-page.css">
+	<link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+	<div class="main-container">
+
+		<div class="image-container">
+			<img src="img/logo.png">
+		</div>
+
+		<div class="form-container">
+			<h1 id="form-title-view">Sign up</h1>
+
+			<ul>
+				<li onclick="signUpSwitch()" id="sign-up-switch" class="switch-on">Signup</li>
+				<li onclick="loginSwitch()" id="log-in-switch" class="switch-off">Login</li>
+			</ul>
+
+			<div>
+				<input id="username" type="text" placeholder="Username" required>
+				<input id="firstName" type="text" placeholder="First Name" required>
+				<input id="lastName" type="text" placeholder="Last Name" required>
+				<input id="email" type="email" placeholder="Email" required>
+				<input id="password" type="password" placeholder="Password" required>
+				<input id="confirm" type="password" placeholder="Confirm" required>
+
+				<button onclick="signUp()" id="sign-in">Sign up</button>
+				<button onclick="logIn()" id="log-in" style="display: none;">Login</button>
+			</div>
+
+		</div>
+
+	</div>
+
+	
+
+	<dialog id="dialog">
+		<h1 id="dialog-content">
+			This is an example of dialog content text!
+		</h1>
+
+		<button id="button-close">Okay</button>
+	</dialog>
+
+	<script src="js/log-page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+@import url('theme.css');
+
+dialog {
+    min-width: 40%;
+    overflow: auto;
+}
+
+.main-dialog-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+#dialog .profile {
+    height: 80px;
+    width: 80px;
+}
+
+#dialog h2 {
+    font-size: 40px;
+}
+
+#dialog ul {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 20px 0px;
+    list-style-type: none;
+}
+
+#dialog ul li {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#dialog ul li span {
+    display: block;
+    color: var(--dark-background-color);
+    font-size: 13px;
+}
+
+#dialog button {
+    margin-top: 0px;
+}
+
+#dialog #close {
+    margin-top: 30px;
+}

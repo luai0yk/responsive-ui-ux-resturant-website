@@ -1,0 +1,108 @@
+@import url('theme.css');
+
+body {
+    display: block;
+    padding: 0px;
+}
+
+.navigation .menu-nav {
+    background-color: var(--background-color);
+    color: white;
+}
+
+.grid {
+    padding: 3vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    row-gap: 3vh;
+    column-gap: 3vh;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: var(--card-radius);
+    background-color: var(--trans-background-color);
+    padding: 10px;
+    overflow: hidden;
+    border: var(--background-color) 0px solid;
+    box-shadow: 0 0 10px #0000001b;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.card:hover {
+    background-color: var(--light-background-color);
+    box-shadow: 0 0 50px #00000038;
+}
+
+.dialog-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+img {
+    width: 80%;
+}
+
+.title {
+    font-size: 25px;
+    color: var(--dark-background-color);
+    width: 100%;
+}
+
+.detail {
+    font-size: 15px;
+    color: #434343;
+    width: 100%;
+}
+
+.price {
+    font-size: 30px;
+    color: #333;
+}
+
+.book-price {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.card button,
+.dialog-card button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: var(--background-color);
+    color: white;
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.card button:hover,
+.dialog-card button:hover {
+    background-color: var(--dark-background-color);
+}
+
+.booked-item-count {
+    margin-left: 6px;
+    background-color: white;
+    color: #333;
+    padding: 2px 5px;
+    border-radius: 50px;
+}
+
+.booked-item-count:hover {
+    background-color: #fabfbf;
+    color: #c70101;
+}

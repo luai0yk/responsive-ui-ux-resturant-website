@@ -1,0 +1,298 @@
+:root {
+    --background-color: #f8b200;
+    --trans-background-color: #fff0c3a8 ;
+    --dark-background-color: #d09800;
+    --light-background-color: #fff2cc;
+    --gray-color:gray;
+    --dark-grey-color: #e5e5e5;
+
+    --card-radius: 10px;
+    --button-radius: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 90px;
+    background-color: #ffffff9a;
+    backdrop-filter: blur(5px);
+}
+
+.profile {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    background-color: var(--light-background-color);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.profile:hover{
+    background-color: var(--background-color);
+}
+
+.profile:hover h2{
+    color: white;
+}
+
+.profile h2{
+    margin: auto;
+    color: var(--dark-background-color);
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+header .navigation ul {
+    list-style-type: none;
+}
+
+header .navigation ul li{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: relative;
+}
+
+header .navigation ul li a{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--dark-background-color);
+    padding: 5px 15px 5px 15px;
+    border-radius: 100px;
+    transition: 0.5s;
+}
+
+header .navigation ul li a:hover{
+    background-color: var(--background-color);
+    color: white;
+}
+
+header .navigation ul li .selected {
+    border-radius: 100px;
+    background-color:var(--background-color);
+    color: white;
+}
+
+.dropdown {
+    list-style-type: none;
+    position: absolute;
+    background-color: white;
+    border-radius: var(--card-radius);
+    box-shadow: 0 0 10px #00000048;
+    display: none;
+    overflow: hidden;
+}
+
+header .navigation ul li .dropdown li{
+    display: block;
+    width: 100%;
+    margin: 13px;
+}
+
+header .navigation ul li .dropdown li a{
+    font-size: 15px;
+}
+
+header .navigation ul li:hover ul.dropdown{
+    display: block;
+}
+
+header .logo h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--dark-background-color);
+}
+
+header .logo img {
+    height: 90px;
+    width: 90px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../img/home-background.jpg);
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-color: var(--background-color);
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    outline: none;
+    font-size: 15px;
+    transition: all 0.5s;
+    background-color: transparent;
+}
+
+input:hover, textarea:hover {
+    border-color: var(--dark-background-color);
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff84;
+    padding: 2%;
+    border-radius: var(--card-radius);
+    box-shadow: 0 0 10px #00000019;
+    margin: 4% 8% 2% 8%;
+}
+
+.footer-container h4 {
+    text-transform: uppercase;
+}
+
+button {
+    width: 100%;
+    padding: 4px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: var(--light-background-color);
+    color: var(--dark-background-color);
+    border-radius: var(--button-radius);
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    border: var(--background-color) solid 0px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    outline: none;
+}
+
+button:hover {
+    background-color: var(--background-color);
+    color: white;
+}
+
+dialog{
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: var(--card-radius);
+    box-shadow: 0 0 500px #0000009a;
+    padding: 30px;
+    animation-name: pop-up;
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes pop-up{
+    from {
+        scale: 0.5;
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(5px);
+    background: rgba(0, 255, 157, 0.026);
+}
+
+@media (min-width: 480px) and (max-width: 999px) {
+    header .navigation ul li{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    header .navigation ul li a{
+        font-weight: 600;
+        font-size: 15px;
+        padding: 4px 8px 4px 8px;
+    }
+
+    header .logo img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .profile {
+        height: 45px;
+        width: 45px;
+    }
+
+    .profile h2 {
+        font-size: 20px;
+    }
+
+    header .navigation ul li .dropdown li{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    header .navigation ul li .dropdown li a{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 479px) {
+    header .navigation ul li{
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    header .navigation ul li a{
+        font-weight: 100;
+        font-size: 10px;
+        padding: 2px 4px 2px 4px;
+    }
+
+    header .logo img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .profile {
+        height: 25px;
+        width: 25px;
+    }
+
+    .profile h2 {
+        font-size: 15px;
+    }
+
+    header .navigation ul li .dropdown li{
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    header .navigation ul li .dropdown li a{
+        font-size: 10px;
+    }
+}

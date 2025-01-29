@@ -1,0 +1,85 @@
+@import url('theme.css');
+
+.main-container {
+    width: 60%;
+    display: flex;
+    background-color: #ffffffec;
+    border-radius: var(--card-radius);
+    box-shadow: 0 0 50px #0000003d;
+    overflow: hidden;
+    border: var(--trans-background-color) solid 1px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    background-color: var(--trans-background-color);
+}
+
+img {
+    width: 75%;
+}
+
+.form-container {
+    flex: 1;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#form-title-view {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: #5e5e5e;
+}
+
+ul {
+    display: flex;
+    text-align: center;
+   background-color: var(--light-background-color);
+   list-style-type: none;
+   border-radius: var(--button-radius);
+   margin-bottom: 30px;
+}
+
+.form-container ul li{
+    flex: 1;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: var(--button-radius);
+    margin: 4px;
+    padding: 2px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.switch-on {
+    background-color: var(--background-color);
+    color: white;
+}
+
+.switch-off {
+    color: var(--background-color);
+    border-radius: var(--button-radius);
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+    .main-container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 599px) {
+
+    .main-container {
+        width: 80%;
+    }
+
+    .image-container {
+        display: none;
+    }
+}

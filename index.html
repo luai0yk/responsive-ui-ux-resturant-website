@@ -1,0 +1,131 @@
+<html lang="en">
+
+<head>
+    <title>home</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/account-dialog.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <img src="img/logo.png" width="10px">
+        </div>
+
+        <div class="navigation">
+            <ul>
+                <li><a href="discussion.html">Reviews</a></li>
+
+                <li>
+                    <a href="#">Menu ▾</a>
+                    <ul class="dropdown">
+                        <li><a href="food-menu.html">Food</a></li>
+                        <li><a href="juice-menu.html">Juice</a></li>
+                        <li><a href="sweet-menu.html">Sweet</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="home-nav" href="#">Home</a></li>
+            </ul>
+        </div>
+
+        <div id="profile" class="profile">
+            <h2 id="firstLetterInHeader">
+                M
+            </h2>
+        </div>
+    </header>
+
+    <ul id="s">
+        <li id="food-container" class="food-container">
+            <div class="text-container">
+                <h1 id="h">Food Menu</h1>
+                <h2>Browse our best healthy food menu!</h2>
+                <h3>Are you starving? Looking for the best restaurant and healthy food all over the city? Then you are
+                    in the right place dear customer. Enjoy browsing</h3>
+
+                <a href="food-menu.html" class="browse-button">
+                    browse
+                </a>
+            </div>
+
+            <div class="img-container">
+                <img id="foodImage" src="img/food/food-12.png">
+            </div>
+        </li>
+        <li id="drink-container" class="drink-container">
+            <div class="text-container">
+                <h1 id="h">Juice Menu</h1>
+                <h2>Wanna drink cold fresh juice?</h2>
+                <h3>Then here you are buddy! Strawberry, Carrot, Kiwi, Orange and a lot of the best juice which are
+                    chosen carefully just for you! Browse, book and enjoy drinking your best juice.</h3>
+
+                <a href="juice-menu.html" class="browse-button">
+                    browse
+                </a>
+            </div>
+
+            <div class="img-container">
+                <img id="juiceImage" src="img/juice/juice-11.png">
+            </div>
+        </li>
+        <li id="sweet-container" class="sweet-container">
+            <div class="text-container">
+                <h1 id="h">Sweet Menu</h1>
+                <h2>Are you looking for good sweet?</h2>
+                <h3>If you just tried eating from our restaurant then hundred percent you are wondering if we serve good
+                    sweet as much as the food, right? We do homie, we have the best sweet ever.</h3>
+
+                <a href="sweet-menu.html" class="browse-button">
+                    browse
+                </a>
+            </div>
+
+            <div class="img-container">
+                <img id="sweetImage" src="img/sweet/sweet-2.png">
+            </div>
+        </li>
+    </ul>
+
+    <div onclick="down()" class="down">▾</div>
+
+    <footer class="footer-container">
+        <h4>
+            This website is powered by Luai Yahya
+        </h4>
+        <h5>luairesraurant@gmail.com</h5>
+    </footer>
+
+    <dialog id="dialog">
+        <div class="main-dialog-container">
+            <div class="profile">
+                <h2 id="firstLetterInDialog">
+                    M
+                </h2>
+            </div>
+
+            <ul>
+                <li><span>USER</span></li>
+                <li><span>NAME</span></li>
+                <li><span>EMAIL</span></li>
+            </ul>
+
+            <button id="sign">Sign up</button>
+            <button id="log">Log in</button>
+
+            <button id="close">Close</button>
+        </div>
+    </dialog>
+
+</body>
+
+<script src="js/home.js"></script>
+<script src="js/account-dialog.js"></script>
+
+</html>
