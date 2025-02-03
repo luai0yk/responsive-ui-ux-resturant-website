@@ -1,5 +1,7 @@
-# responsive-UI-UX-resturant-website
+# responsive-ux-ux-resturant-website
 This simple UI/UX restaurant website, built with HTML, CSS, and JavaScript, offers a clean, responsive design for all devices. If you find it useful, feel free to contribute by adding features or improving the design!
+
+🔗 **Live Demo:** [Visit the Website](http://lykres.luai.rf.gd/)
 
 # The Sign-In/Up Interface
 ### This screen allows users to sign in or create a new account.
